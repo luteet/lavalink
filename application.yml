@@ -30,8 +30,8 @@ plugins:
       spotify: true # Enable Spotify lyrics source
     spotify:
       # clientId & clientSecret are required for using spsearch
-      clientId: "f05933b35328428da92f22fa56fafac9"
-      clientSecret: "fb0a26c723e044248455eb05a5d7e07d"
+      clientId: "${SPOTIFY_CLIENT_ID}"
+      clientSecret: "${SPOTIFY_CLIENT_SECRET}"
       # spDc: "your sp dc cookie" # the sp dc cookie used for accessing the spotify lyrics api
       countryCode: "US" # the country code you want to use for filtering the artists top tracks. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
       playlistLoadLimit: 6 # The number of pages at 100 tracks each
@@ -59,4 +59,5 @@ lavalink:
     - dependency: "dev.lavalink.youtube:youtube-plugin:1.16.0"
       snapshot: false
     - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.8.1"
+      repository: "https://maven.lavalink.dev/releases"
       snapshot: false
