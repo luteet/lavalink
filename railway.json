@@ -1,7 +1,6 @@
 {
 	"build": {
-		"builder": "NIXPACKS",
-		"rootDirectory": "dist"
+		"builder": "NIXPACKS"
 	},
 	"deploy": {
 		"startCommand": "java $JAVA_OPTS -jar lavalink.jar"
